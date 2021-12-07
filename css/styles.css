@@ -36,7 +36,7 @@ body {
     --white: #fafaf9;
     --silver: #c0bebe;
     --gray: #e6e6e6;
-    --orange: #a49aca;
+    --orange: #bfb6e0;
 }
 /* #######################################   2 Navigation   ###################### */
 .navbar {
@@ -267,13 +267,15 @@ body {
 }
 /* #######################################   5 Projects   #################### */
 .projects {
-    background-color: var(--gray);
+    background-color: var(--white);
 
     padding: 4rem 0;
 }
 
 .projects .section-content .project-card img {
     width: 100%;
+
+    padding-bottom: 1rem;
 }
 
 .projects .project-grid {
@@ -283,10 +285,14 @@ body {
 }
 
 .projects .project-grid .project-card {
-    background-color: var(--white);
+    background-color: var(--gray);
     border-radius: 20px;
 
     padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .card-text h3 {
@@ -295,6 +301,8 @@ body {
 
 .card-text p {
     font-weight: 500;
+
+    margin-bottom: .5rem;
 }
 
 .project-card .card-links {
@@ -531,6 +539,14 @@ footer {
 }
 
 @media (min-width: 1024px) {
+    .section-titles p {
+        font-size: 1rem;
+    }
+
+    .section-titles h2 {
+        font-size: 1.3rem;
+    }
+    
     .projects .project-grid {
         grid-template-columns: repeat(3, 1fr);
     }
