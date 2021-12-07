@@ -20,7 +20,7 @@
     text-decoration: none;
     list-style: none;
 
-    transition: 1s;
+    transition: .7s ease;
 }
 
 html {
