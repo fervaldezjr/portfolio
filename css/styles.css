@@ -38,6 +38,34 @@ body {
     --gray: #e6e6e6;
     --orange: #bfb6e0;
 }
+
+.dark-theme {
+    --black: #fafaf9;
+    --blue: #0071e3;
+    --white: #222121;
+    --silver: #c0bebe;
+    --gray: #353535;
+    --orange: #bfb6e0;
+}
+
+#icon {
+    position: fixed;
+
+    bottom: 20px;
+    left: 20px;
+
+    font-size: 2rem;
+
+    color: var(--black);
+
+    background-color: var(--gray);
+    border-radius: 20px;
+    border: solid 1px var(--silver);
+
+    padding: 1rem;
+
+    opacity: .75;
+}
 /* #######################################   2 Navigation   ###################### */
 .navbar {
     background-color: var(--white);
@@ -187,6 +215,8 @@ body {
     .section-titles p {
         font-size: .8rem;
         font-weight: 600;
+
+        color: var(--black);
     }
 
     .section-content {
@@ -227,6 +257,8 @@ body {
     /* About */
 .about {
     padding: 3rem 0;
+
+    background-color: var(--white);
 }
 
 .about .section-content img {
@@ -318,6 +350,8 @@ body {
 /* #######################################   6 Contact   ################## */
 .contact {
     padding: 3rem 0;
+
+    background-color: var(--white);
 }
 
 .contact-grid {
@@ -398,6 +432,10 @@ footer {
 
 .section-Language a {
     margin-right: 1rem;
+}
+
+.firma p {
+    color: var(--black);
 }
 /* #######################################   8 Medias queries   ######################### */
 @media (min-width: 768px) {
