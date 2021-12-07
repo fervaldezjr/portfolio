@@ -133,20 +133,6 @@ body {
     letter-spacing: -.10rem;
 
     color: var(--black);
-
-    /* background-image: linear-gradient(
-    91.36deg, #f1c4bf 0%, #f5b1b1 13.02%, #ddb8b5 25.52%, #CDC7E5 37.5%, #CDC7E5 49.48%, #d3cfe4 63.02%, #CDC7E5 72.92%, #f5bebe 84.38%, #CDC7E5 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-animation: intro-gradient 10s infinite ease both;
-    -moz-animation: intro-gradient 10s infinite ease both;
-    animation: intro-gradient 10s infinite ease both;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 
 .hero .hero-text p {
@@ -250,7 +236,8 @@ body {
 }
 
 .about .section-content .about-technologies {
-    background-color: var(--orange);
+    background: linear-gradient(90deg, #bfaeff 7%, rgb(206, 177, 243) 46%, rgba(228,193,255,1) 71%, rgba(191,182,224,1) 81%, rgba(163,137,255,1) 100%);
+
     border-radius: 5px;
 
     margin-top: 1rem;
