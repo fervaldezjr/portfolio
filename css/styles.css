@@ -338,6 +338,10 @@ body {
     align-items: center;
 }
 
+.project-card .card-links a {
+    font-size: .9rem;
+}
+
 .projects .view-more {
     display: flex;
     justify-content: center;
