@@ -19,7 +19,6 @@
 
     text-decoration: none;
     list-style: none;
-
     transition: .7s ease;
 }
 
@@ -30,7 +29,6 @@ html {
 body {
     font-size: 10px;
     font-family: 'Inter', sans-serif;
-
 
 }
 
@@ -79,8 +77,13 @@ body {
 .navbar .navbar-brand {
     color: var(--black);
 
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: .5rem;
+}
+
+.navbar-brand img {
+    max-height: 75px;
+    color: var(--white);
 }
 
 .navbar button span {
@@ -104,7 +107,7 @@ body {
 .hero {
     background-color: var(--white);
 
-    padding: 7.8rem 0;
+    padding: 1rem 0;
 
     display: flex;
     flex-direction: column;
@@ -230,15 +233,15 @@ body {
     .section-content h3 {
         margin-top: .5rem;
 
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--orange);
+        font-size: .8rem;
+        font-weight: 400;
+        color: var(--black);
     }
 
     .section-content p {
-        font-size: .8rem;
-        font-weight: 600;
-        line-height: 2;
+        font-size: .6rem;
+        font-weight: 400;
+        line-height: 1.2;
 
         color: var(--black);
     }
@@ -259,6 +262,10 @@ body {
     }
 
     /* About */
+
+.about-text {
+    padding: 3.3rem;
+}
 .about {
     padding: 3rem 0;
 
@@ -267,12 +274,12 @@ body {
 
 .about .section-content img {
     width: 100%;
+    border-radius: 5px;
 
-    filter: saturate(1.5);
+    padding: 4rem
 }
 
 .about .section-content .about-technologies {
-    background: linear-gradient(90deg, #bfaeff 7%, rgb(206, 177, 243) 46%, rgba(228,193,255,1) 71%, rgba(191,182,224,1) 81%, rgba(163,137,255,1) 100%);
 
     border-radius: 5px;
 
@@ -287,6 +294,8 @@ body {
 .about .section-content .about-technologies img {
     width: 100%;
     max-width: 50px;
+
+    padding: 0;
 }
 /* #######################################   5 Projects   #################### */
 .projects {
@@ -450,7 +459,7 @@ footer {
 /* #######################################   8 Medias queries   ######################### */
 @media (min-width: 768px) {
     .navbar .navbar-brand {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .navbar .navbar-nav .nav-item .nav-link {
@@ -492,7 +501,7 @@ footer {
         }
     
         .section-content p {
-            font-size: 1rem;
+            font-size: .8rem;
         }
 
         .section-content a {
@@ -500,6 +509,10 @@ footer {
         }
 
         /* About Grid */
+
+        .about {
+            padding: 2rem;
+        }
 
         .about-content {
             display: grid;
@@ -522,13 +535,16 @@ footer {
             width: 100%;
             height: 100%;
 
+
             object-fit: cover;
             object-position: center;
+
+            border-radius: 10px;
         }
 
         .about .section-content .about-technologies img {
             width: 100%;
-            max-width: 80px;
+            max-width: 75px;
             margin: 0 1.2rem;
         }
 

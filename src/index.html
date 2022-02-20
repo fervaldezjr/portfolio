@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../images/fernandoicon.png" type="image/x-icon">
+  <!-- styles -->
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/77408c3814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="bg-[#FAFAF0] md:px-36 border-black border-b-2">
+    <!-- Navigation -->
+    <nav id="navigation" class="p-5 md:flex md:justify-between">
+      <div class="flex justify-between items-center ">
+        <!-- Logo -->
+        <!-- <span class="text-lg font-black  cursor-pointer text-neutral-900">
+          Fernando Valdez
+        </span> -->
+        <div class="logo flex items-center">
+          <img class="w-1/2" src="../images/fernandologo.png" alt="Fernando Valdez logo">
+        </div>
+        <!-- Menu hamburger -->
+        <div class="contenido flex items-center justify-center">
+          <!-- Menu Icon -->
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block p-3" id="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="27" height="27" fill="none"
+              stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">&lt;!--!
+              Atomicons Free
+              1.00 by @atisalab
+              License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<line x1="21"
+                x2="3" y1="18" y2="18"></line>
+              <line x1="21" x2="3" y1="12" y2="12"></line>
+              <line x1="21" x2="3" y1="6" y2="6"></line>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <ul id="nav-list"
+        class="bg-neutral-900 text-[#FAFAF0] font-extrabold flex-col py-5 items-center justify-center text-right transition-all duration-500 rounded-xl absolute left-5 right-5 top-20 -translate-x-[100rem] md:bg-[#FAFAF0] md:flex-row md:text-neutral-900 md:py-0 md:my-0">
+        <li class="mx-6 my-6 md:my-0">
+          <a href="../index.html" class="text-lg hover:text-[#5e17eb] duration-500">Home</a>
+        </li>
+        <li class="mx-6 my-6 md:my-0">
+          <a href="#about-me" class="text-lg hover:text-[#5e17eb] duration-500">About Me</a>
+        </li>
+        <li class="mx-6 my-6 md:my-0">
+          <a href="citas.html" class="text-lg hover:text-[#5e17eb] duration-500">Projects</a>
+        </li>
+        <li class="mx-6 my-6 md:my-0">
+          <a href="biografia.html" class="text-lg hover:text-[#5e17eb] duration-500">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main -->
+  <div class="bg-[#FAFAF0] md:px-36 border-black border-b-2">
+    <main>
+      <!-- Hero -->
+      <section class="hero flex-col-reverse items-center p-5 justify-center border-black border-b-2">
+        <div class="img-hero flex items-center justify-center">
+          <img class="rounded-b-full shadow-xl" width="250px" src="../images/fernando-valdez-profile.webp"
+            alt="Fernando julian valdez">
+        </div>
+        <div class="text-hero container flex-col justify-start items-center text-neutral-900">
+          <p class="font-semibold">Hello, I'm</p>
+          <h1 class="text-2xl font-black">Fernando Julian Valdez</h1>
+          <h2 class="text-xl font-black">Software Developer</h2>
+          <p class="font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi explicabo labore
+            dolore eos asperiores
+            adipisci? Illo rem amet vero aliquid?</p>
+          <div class="hero-buttons my-2">
+            <button
+              class="shadow-lg border-[#5e17eb] border-2 mr-2 p-2 font-semibold bg-[#5e17eb] text-[#FAFAF0] rounded-lg hover:bg-[#FAFAF0] hover:text-[#5e17eb] transition duration-300">View
+              Projects</button>
+            <button
+              class="shadow-lg border-[#5e17eb] border-2 p-2 font-semibold text-[#5e17eb] rounded-lg hover:bg-[#5e17eb] hover:text-[#FAFAF0] transition duration-300">View
+              Resume</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about-me" class="hero flex-col-reverse items-center p-5 justify-center">
+        <div class="text-hero container flex-col justify-start items-center text-neutral-900">
+          <h2 class="text-2xl font-black">About Me</h2>
+          <h3 class="text-xl font-black">Nice to meet you!</h3>
+          <div class="img-hero flex items-center justify-center">
+            <img class="my-2" src="../images/fernando-about.webp" alt="Fernando julian valdez">
+          </div>
+          <p class="font-semibold">I specialize in Frontend development with React where I have a year of experience. I
+            also use HTML, CSS with Tailwind, Bootstrap or SASS, JavaScript, node.js and Git.
+            <br>
+            I keep myself informed about changes and updates because I always apply clean code, with good practices and
+            thinking about optimization.
+            <br>
+            I have a passion for learning. For several years I have acquired many technologies as a self-taught person,
+            managing to build a learning cycle that has given me the autonomy to overcome many obstacles.
+            <br>
+            I enjoy sharing my learning and guiding those who are starting out in this world where there are no limits.
+            <br>
+            I am currently living in Barcelona and I am actively looking for new challenges where I can leave my mark
+            and grow together.
+          </p>
+        </div>
+        <div id="stack"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
