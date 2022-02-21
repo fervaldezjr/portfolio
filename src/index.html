@@ -4,12 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Software developer">
+  <title> Fernando Valdez - Software Developer </title>
   <!-- favicon -->
   <link rel="shortcut icon" href="../images/fernandoicon.png" type="image/x-icon">
   <!-- styles -->
   <link href="/dist/output.css" rel="stylesheet">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/77408c3814.js" crossorigin="anonymous"></script>
+  <!-- swipper js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -18,9 +22,6 @@
     <nav id="navigation" class="p-5 md:flex md:justify-between">
       <div class="flex justify-between items-center ">
         <!-- Logo -->
-        <!-- <span class="text-lg font-black  cursor-pointer text-neutral-900">
-          Fernando Valdez
-        </span> -->
         <div class="logo flex items-center">
           <img class="w-1/2" src="../images/fernandologo.png" alt="Fernando Valdez logo">
         </div>
@@ -42,7 +43,7 @@
       </div>
       <!-- Navigation -->
       <ul id="nav-list"
-        class="bg-neutral-900 text-[#FAFAF0] font-extrabold flex-col py-5 items-center justify-center text-right transition-all duration-500 rounded-xl absolute left-5 right-5 top-20 -translate-x-[100rem] md:bg-[#FAFAF0] md:flex-row md:text-neutral-900 md:py-0 md:my-0">
+        class="bg-neutral-900 text-[#FAFAF0] font-extrabold flex-col py-5 items-center justify-center text-right transition-all duration-500 rounded-xl absolute left-5 right-5 top-20 -translate-x-[100rem] md:bg-[#FAFAF0] md:text-neutral-900 md:py-0 md:my-0 md:translate-x-0 md:flex md:flex-row">
         <li class="mx-6 my-6 md:my-0">
           <a href="../index.html" class="text-lg hover:text-[#5e17eb] duration-500">Home</a>
         </li>
@@ -60,21 +61,22 @@
   </div>
 
   <!-- Main -->
-  <div class="bg-[#FAFAF0] md:px-36 border-black border-b-2">
+  <div class="bg-[#FAFAF0]  border-black border-b-2">
     <main>
       <!-- Hero -->
-      <section class="hero flex-col-reverse items-center p-5 justify-center border-black border-b-2">
-        <div class="img-hero flex items-center justify-center">
+      <section
+        class="hero flex-col-reverse items-center p-5 justify-center border-black border-b-2 md:flex md:flex-row md:justify-around md:items-center">
+        <div class="img-hero flex items-center justify-center md:mr-2">
           <img class="rounded-b-full shadow-xl" width="250px" src="../images/fernando-valdez-profile.webp"
             alt="Fernando julian valdez">
         </div>
-        <div class="text-hero container flex-col justify-start items-center text-neutral-900">
+        <div class="text-hero container flex-col justify-start items-center text-neutral-900 md:w-1/2">
           <p class="font-semibold">Hello, I'm</p>
           <h1 class="text-2xl font-black">Fernando Julian Valdez</h1>
           <h2 class="text-xl font-black">Software Developer</h2>
-          <p class="font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi explicabo labore
-            dolore eos asperiores
-            adipisci? Illo rem amet vero aliquid?</p>
+          <p class="font-semibold ">I have been developing for more than a year and I am looking for new
+            challenges to
+            share my knowledge, learn and grow professionally.</p>
           <div class="hero-buttons my-2">
             <button
               class="shadow-lg border-[#5e17eb] border-2 mr-2 p-2 font-semibold bg-[#5e17eb] text-[#FAFAF0] rounded-lg hover:bg-[#FAFAF0] hover:text-[#5e17eb] transition duration-300">View
@@ -87,33 +89,289 @@
       </section>
 
       <!-- About Me -->
-      <section id="about-me" class="hero flex-col-reverse items-center p-5 justify-center">
+      <section id="about-me" class="hero flex-col-reverse items-center p-5 justify-center border-black border-b-2">
         <div class="text-hero container flex-col justify-start items-center text-neutral-900">
           <h2 class="text-2xl font-black">About Me</h2>
           <h3 class="text-xl font-black">Nice to meet you!</h3>
-          <div class="img-hero flex items-center justify-center">
-            <img class="my-2" src="../images/fernando-about.webp" alt="Fernando julian valdez">
+          <div class="about-cont md:flex md:justify-between md:items-center">
+            <div class="img-hero flex items-center justify-center">
+              <img class="my-2" src="../images/fernando-about.webp" width="450px" alt="Fernando julian valdez">
+            </div>
+            <p class="font-semibold md:w-1/2">I specialize in Frontend development with React where I have a year of
+              experience. I
+              also use HTML, CSS with Tailwind, Bootstrap or SASS, JavaScript, node.js and Git.
+              <br>
+              I keep myself informed about changes and updates because I always apply clean code, with good practices
+              and
+              thinking about optimization.
+              <br>
+              I have a passion for learning. For several years I have acquired many technologies as a self-taught
+              person,
+              managing to build a learning cycle that has given me the autonomy to overcome many obstacles.
+              <br>
+              I enjoy sharing my learning and guiding those who are starting out in this world where there are no
+              limits.
+              <br>
+              I am currently living in Barcelona and I am actively looking for new challenges where I can leave my mark
+              and grow together.
+            </p>
           </div>
-          <p class="font-semibold">I specialize in Frontend development with React where I have a year of experience. I
-            also use HTML, CSS with Tailwind, Bootstrap or SASS, JavaScript, node.js and Git.
-            <br>
-            I keep myself informed about changes and updates because I always apply clean code, with good practices and
-            thinking about optimization.
-            <br>
-            I have a passion for learning. For several years I have acquired many technologies as a self-taught person,
-            managing to build a learning cycle that has given me the autonomy to overcome many obstacles.
-            <br>
-            I enjoy sharing my learning and guiding those who are starting out in this world where there are no limits.
-            <br>
-            I am currently living in Barcelona and I am actively looking for new challenges where I can leave my mark
-            and grow together.
-          </p>
         </div>
-        <div id="stack"></div>
+        <div id="stack" class="grid grid-cols-10 gap-2 my-2"></div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="hero flex-col items-center p-5 justify-center border-neutral-900 border-b-2">
+        <div class="project-text">
+          <h2 class="text-2xl font-black">Projects</h2>
+          <h3 class="text-xl font-black">Some of my projects, works and collabs.</h3>
+          <p class="font-mono text-xs">Swipe left or right </p>
+        </div>
+
+        <!-- Swiper -->
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- Item 1 -->
+              <div class="projects-content my-2 bg-[#FAFAF0] flex justify-center items-center w-fit">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg border-neutral-900 border-2">
+                  <img class="w-full border-neutral-900 border-b-2" src="/images/cleanvel-project.webp"
+                    alt="Sunset in the mountains">
+                  <div class="px-6 py-4 text-neutral-900">
+                    <div class="font-black text-xl mb-2">1. Cleanvel</div>
+                    <p class="font-semibold">
+                      This site was created from scratch from its design, colors, distribution and code. The goal was to
+                      get exposure on the internet and it was achieved by generating new customers through this
+                      channel.
+                    </p>
+                    <div class="project-buttons flex text-xs my-2">
+                      <a href="https://www.cleanvel.es" target="_blank">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 mr-2 p-2 font-semibold bg-[#5e17eb] text-[#FAFAF0] rounded-lg hover:bg-[#FAFAF0] hover:text-[#5e17eb] transition duration-300">Visit
+                          Project</button>
+                      </a>
+                      <a href="">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 p-2 font-semibold text-[#5e17eb] rounded-lg hover:bg-[#5e17eb] hover:text-[#FAFAF0] transition duration-300">View
+                          Repository</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="px-6 pt-2 pb-2 text-xs">
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#HTML</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#SASS</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#JavaScript</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#Bootstrap</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#ResponsiveDesign</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- item 2 -->
+              <div class="projects-content my-2 bg-[#FAFAF0] flex justify-center items-center w-fit">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg border-neutral-900 border-2">
+                  <img class="w-full border-neutral-900 border-b-2" src="/images/lyrics-project.webp"
+                    alt="Sunset in the mountains">
+                  <div class="px-6 py-4 text-neutral-900">
+                    <div class="font-black text-xl mb-2">2. Lyrics finder</div>
+                    <p class="font-semibold">
+                      Get the consumption of 2 API's where I needed the client to search for the name of a song along
+                      with the band and then the App returns the requested information.
+                    </p>
+                    <div class="project-buttons flex text-xs my-2">
+                      <a href="https://lyrics-app-zeta.vercel.app/" target="_blank">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 mr-2 p-2 font-semibold bg-[#5e17eb] text-[#FAFAF0] rounded-lg hover:bg-[#FAFAF0] hover:text-[#5e17eb] transition duration-300">Visit
+                          Project</button>
+                      </a>
+                      <a href="">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 p-2 font-semibold text-[#5e17eb] rounded-lg hover:bg-[#5e17eb] hover:text-[#FAFAF0] transition duration-300">View
+                          Repository</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="px-6 pt-2 pb-2 text-xs">
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#Vercel</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#React</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#Styled
+                      Components</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#ResponsiveDesign</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#Rest
+                      API</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- item 3 -->
+              <div class="projects-content my-2 bg-[#FAFAF0] flex justify-center items-center w-fit">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg border-neutral-900 border-2">
+                  <img class="w-full border-neutral-900 border-b-2" src="/images/citas-project.webp"
+                    alt="Sunset in the mountains">
+                  <div class="px-6 py-4 text-neutral-900">
+                    <div class="font-black text-xl mb-2">3. Patient Schedule</div>
+                    <p class="font-semibold">
+                      Monitoring and organization of patients to be able to add a patient profile, be able to edit the
+                      data entered and delete it if we wish.
+                    </p>
+                    <div class="project-buttons flex text-xs my-2">
+                      <a href="https://citas-react-two.vercel.app/" target="_blank">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 mr-2 p-2 font-semibold bg-[#5e17eb] text-[#FAFAF0] rounded-lg hover:bg-[#FAFAF0] hover:text-[#5e17eb] transition duration-300">Visit
+                          Project</button>
+                      </a>
+                      <a href="https://github.com/fervaldezjr">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 p-2 font-semibold text-[#5e17eb] rounded-lg hover:bg-[#5e17eb] hover:text-[#FAFAF0] transition duration-300">View
+                          Repository</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="px-6 pt-2 pb-2 text-xs">
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#React</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#Tailwind</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#ResponsiveDesign</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#Vercel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- item 4 -->
+              <div class="projects-content my-2 bg-[#FAFAF0] flex justify-center items-center w-fit">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg border-neutral-900 border-2">
+                  <img class="w-full border-neutral-900 border-b-2" src="/images/grids-project.webp"
+                    alt="Sunset in the mountains">
+                  <div class="px-6 py-4 text-neutral-900">
+                    <div class="font-black text-xl mb-2">4. Grids</div>
+                    <p class="font-semibold">
+                      This site was requested with a modern design, focused on styles and inspired by Grids. A very good
+                      performance was achieved.
+                    </p>
+                    <div class="project-buttons flex text-xs my-2">
+                      <a href="https://fervaldezjr.github.io/grids-responsive/" target="_blank">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 mr-2 p-2 font-semibold bg-[#5e17eb] text-[#FAFAF0] rounded-lg hover:bg-[#FAFAF0] hover:text-[#5e17eb] transition duration-300">Visit
+                          Project</button>
+                      </a>
+                      <a href="https://github.com/fervaldezjr">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 p-2 font-semibold text-[#5e17eb] rounded-lg hover:bg-[#5e17eb] hover:text-[#FAFAF0] transition duration-300">View
+                          Repository</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="px-6 pt-2 pb-2 text-xs">
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#HTML</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#SASS</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#JavaScript</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#ResponsiveDesign</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- item 5 -->
+              <div class="projects-content my-2 bg-[#FAFAF0] flex justify-center items-center w-fit">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg border-neutral-900 border-2">
+                  <img class="w-full border-neutral-900 border-b-2" src="/images/checkout-project.webp" alt="Checkout">
+                  <div class="px-6 py-4 text-neutral-900">
+                    <div class="font-black text-xl mb-2">5. Checkout</div>
+                    <p class="font-semibold">
+                      Checkout with field validation, API connection and a user stories with 5 objectives which were
+                      fully met.
+                    </p>
+                    <div class="project-buttons flex text-xs my-2">
+                      <a href="https://fervaldezjr.github.io/minimalistic-checkout/" target="_blank">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 mr-2 p-2 font-semibold bg-[#5e17eb] text-[#FAFAF0] rounded-lg hover:bg-[#FAFAF0] hover:text-[#5e17eb] transition duration-300">Visit
+                          Project</button>
+                      </a>
+                      <a href="https://github.com/fervaldezjr">
+                        <button
+                          class="shadow-lg border-[#5e17eb] border-2 p-2 font-semibold text-[#5e17eb] rounded-lg hover:bg-[#5e17eb] hover:text-[#FAFAF0] transition duration-300">View
+                          Repository</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="px-6 pt-2 pb-2 text-xs">
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#HTML</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#SASS</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#JavaScript</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#ResponsiveDesign</span>
+                    <span
+                      class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2">#Rest
+                      API</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="hero flex-col items-center p-5 justify-start">
+        <div class="contact-text">
+          <h2 class="text-2xl font-black">Keep in touch</h2>
+        </div>
+        <div class="contact-content my-2">
+          <a class="flex items-center font-semibold text-[#5e17eb] text-xl underline max-w-fit hover:no-underline transition duration-300"
+            href=":mailto:fervaldezjr11@gmail.com">
+            Send email
+          </a>
+          <a class="flex items-center font-semibold text-[#5e17eb] text-xl underline max-w-fit hover:no-underline transition duration-300"
+            href="https://www.linkedin.com/in/fervaldezjr/">
+            Follow me in Linkedin
+          </a>
+          <a class="flex items-center font-semibold text-[#5e17eb] text-xl underline max-w-fit hover:no-underline transition duration-300"
+            href="https://github.com/fervaldezjr">
+            Github profile
+          </a>
+        </div>
+
       </section>
     </main>
   </div>
 
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
+  <!-- Scripts -->
   <script src="js/menu.js"></script>
 </body>
 
