@@ -630,3 +630,12 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+.swiper-cards .swiper-slide {
+  background-color: #FAFAF0;
+}
+
+.swiper-android .swiper-slide, .swiper-wrapper {
+  transform: translate3d(0px,0,0);
+  overflow: hidden;
+}
